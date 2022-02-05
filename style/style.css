@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    width: 400px;
+    height: 470px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    background-color: cadetblue;
+}
+.display{
+    padding: 60px 190px;
+    margin: 10px 0px ;
+    border: solid black 3px;
+    background-color: lavender;
+}
+.buttons{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+}
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.top-buttons>button{
+    padding: 10px 20px;
+}
+.bottom-buttons{
+    display: flex;
+}
+.decimal-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    width: 325px;
+}
+.decimal-buttons>button{
+    padding: 20px 47px;
+    margin: 1px;
+}
+#zero{
+    padding: 20px 100.5px;
+}
+#dot{
+    padding: 20px 48.5px;
+}
+.side-buttons{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+    gap: 2px;
+}
+.side-buttons>button{
+    padding: 51.5px 18px;
+}
