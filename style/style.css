@@ -1,6 +1,7 @@
 body{
     display: flex;
     justify-content: center;
+    background-color: #ffe338;
 }
 .container{
     display: flex;
@@ -10,14 +11,22 @@ body{
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
-
-    background-color: cadetblue;
+    background-color: purple;
 }
 .display{
-    padding: 60px 190px;
+    
     margin: 10px 0px ;
     border: solid black 3px;
     background-color: lavender;
+    display: flex;
+    flex-direction: column;
+}
+.display > * {
+    width: 380px;
+    height: 60px;
+    text-align: right;
+    line-height: 80px;
+    font-size: 30px;
 }
 .buttons{
     display: flex;
@@ -45,11 +54,28 @@ body{
     padding: 20px 47px;
     margin: 1px;
 }
-#zero{
+/* #zero{
     padding: 20px 100.5px;
 }
 #dot{
     padding: 20px 48.5px;
+} */
+#dot{
+    flex-grow: 1;
+    max-width: 211px;
+}
+#equal{
+    background-color: gold;
+    border-radius: 5px;
+    border-color: #000000;
+    color: white;
+    font-weight: bolder;
+    font-size: 24px;
+    padding: 45px 10px;
+    text-shadow: 0px 0px 2px black ;
+}
+#equal:hover{
+    background-color: goldenrod;
 }
 .side-buttons{
     display: flex;
