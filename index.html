@@ -17,10 +17,10 @@
         <section class="buttons">
             <div class="top-buttons">
                 <button>Backspace</button>
-                <button>Clear</button>
-                <button>/</button>
-                <button>*</button>
-                <button>-</button>
+                <button onclick="clears()">Clear</button>
+                <button data-key="/" onclick="setOperator('/')">/</button>
+                <button data-key="*" onclick="setOperator('*')">*</button>
+                <button data-key="-" onclick="setOperator('-')">-</button>
             </div>
             <div class="bottom-buttons">
                 <div class="decimal-buttons">
@@ -37,8 +37,8 @@
                     <button id="dot" onclick="setValue('.')">.</button>
                 </div>
                 <div class="side-buttons">
-                    <button data-key="+">+</button>
-                    <button id="equal">=</button>
+                    <button data-key="+" onclick="setOperator('+')">+</button>
+                    <button id="equal" onclick="equals()">=</button>
                 </div>
             </div>
         </section>
