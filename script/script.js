@@ -38,7 +38,7 @@ function operate(operatorValue){
     {
         divide();
     }
-    answer.textContent = result;
+    answer.textContent = document.getElementsByClassName("input").item(0).textContent + '=';
     number1 = result.toString();  //number1 is a int here
 }
 
@@ -81,7 +81,7 @@ function equals(){
     operate(operatorValue);
     number2 = '';
     operatorCount -= 1;
-    screen.textContent = '';
+    screen.textContent = result;
 }
 function clears(){
     operatorFlag = false;
