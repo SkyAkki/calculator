@@ -3,10 +3,12 @@ let number1 = '';
 let number2 = '';
 let screen = document.querySelector(".display > .input");
 let answer = document.querySelector(".display > .answer");
+const keys = Array.from(document.querySelectorAll('.key'));
 let operatorCount = 0;
 let result = 0; //program is running fine if i remove result/operatorValue declararion... undeclared variable names used inside a function defaults to global behaviour
 let operatorValue = '';
 
+window.addEventListener('keydown', keyboard);
 
 function operate(operatorValue){
     if (operatorValue == '+')
@@ -105,4 +107,12 @@ function checkDot(number){
     {
         document.getElementById("dot").disabled = false; 
     }
+}
+
+function keyboard(e){
+    const key = document.querySelector(`button[data-key="${e.keyCode}"]`);
+    if (!key) return;
+    // console.log(e)
+    // console.log(key)
+    key.click();
 }

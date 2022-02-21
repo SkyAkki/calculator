@@ -9,3 +9,4 @@ Learnings:
 
 Bugs:
 1. Backspace logic is hardcoded and yields unnecessary text in display.
+2. Early pressing of equals results in unexpected answers.
