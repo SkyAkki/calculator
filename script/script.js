@@ -7,37 +7,25 @@ let operatorCount = 0;
 let result = 0; //program is running fine if i remove result/operatorValue declararion... undeclared variable names used inside a function defaults to global behaviour
 let operatorValue = '';
 
-function add(){
-    result = parseFloat(number1) + parseFloat(number2);
-}
-function subtract(){
-    result = parseFloat(number1) - parseFloat(number2);
-}
-function multiply(){
-    result = parseFloat(number1) * parseFloat(number2);
-}
-function divide(){
-    result = parseFloat(number1) / parseFloat(number2);
-}
-
 
 function operate(operatorValue){
     if (operatorValue == '+')
     {
-        add();
+        result = parseFloat(number1) + parseFloat(number2);
     }
     else if(operatorValue == '-')
     {
-        subtract();
+        result = parseFloat(number1) - parseFloat(number2);
     }
     else if(operatorValue == '*')
     {
-        multiply();
+        result = parseFloat(number1) * parseFloat(number2);
     }
     else if(operatorValue == '/')
     {
-        divide();
+        result = parseFloat(number1) / parseFloat(number2);
     }
+    result = parseFloat(result.toFixed(2)); //convert to Float again to remove the trailing zeros
     answer.textContent = document.getElementsByClassName("input").item(0).textContent + '=';
     number1 = result.toString();  //number1 is a int here
 }
@@ -82,6 +70,7 @@ function equals(){
     number2 = '';
     operatorCount -= 1;
     screen.textContent = result;
+    document.getElementById("dot").disabled = false; 
 }
 function clears(){
     operatorFlag = false;
