@@ -49,10 +49,24 @@ function setValue(value){
     }
     if (operatorFlag)
     {
+        if (value == 'back')
+        {
+            number2 = number2.slice(0,number2.length -1)
+            screen.textContent = number1 + operatorValue + number2; //hardcoded
+            checkDot(number2);
+            return 0;
+        }
         number2 = number2.concat(value);
     }
     else
     {
+        if (value == 'back')
+        {
+            number1 = number1.slice(0,number1.length -1)
+            screen.textContent = number1;
+            checkDot(number1);
+            return 0;
+        }
         number1 = number1.concat(value);
     }
     screen.textContent += value;
@@ -81,4 +95,14 @@ function clears(){
     answer.textContent = '';
     screen.textContent = '';
     operatorValue = '';
+}
+function checkDot(number){
+    if (number.includes('.'))
+    {
+        document.getElementById("dot").disabled = true; 
+    }
+    else
+    {
+        document.getElementById("dot").disabled = false; 
+    }
 }
