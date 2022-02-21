@@ -16,29 +16,29 @@
         </section>
         <section class="buttons">
             <div class="top-buttons">
-                <button class="key" data-key="8" onclick="setValue('back')">Backspace</button>
-                <button class="key" data-key="46" onclick="clears()">Clear</button>
-                <button class="key" data-key="111" onclick="setOperator('/')">/</button>
-                <button class="key" data-key="106" onclick="setOperator('*')">*</button>
-                <button class="key" data-key="109" onclick="setOperator('-')">-</button>
+                <button  data-key="8" onclick="setValue('back')">Backspace</button>
+                <button  data-key="46" data-secondary="27" onclick="clears()">Clear</button>
+                <button  data-key="111" data-secondary="191" onclick="setOperator('/')">/</button>
+                <button  data-key="106" onclick="setOperator('*')">*</button>
+                <button  data-key="109" data-secondary="173" onclick="setOperator('-')">-</button>
             </div>
             <div class="bottom-buttons">
                 <div class="decimal-buttons">
-                    <button class="key" data-key="103" onclick="setValue(7)">7</button>
-                    <button class="key" data-key="104" onclick="setValue(8)">8</button>
-                    <button class="key" data-key="105" onclick="setValue(9)">9</button>
-                    <button class="key" data-key="100" onclick="setValue(4)">4</button>
-                    <button class="key" data-key="101" onclick="setValue(5)">5</button>
-                    <button class="key" data-key="102" onclick="setValue(6)">6</button>
-                    <button class="key" data-key="97" onclick="setValue(1)">1</button>
-                    <button class="key" data-key="98" onclick="setValue(2)">2</button>
-                    <button class="key" data-key="99" onclick="setValue(3)">3</button>
-                    <button class="key" data-key="96" onclick="setValue(0)">0</button>
-                    <button class="key" data-key="110" id="dot" onclick="setValue('.')">.</button>
+                    <button  data-key="103" data-secondary="55"onclick="setValue(7)">7</button>
+                    <button  data-key="104" data-secondary="56" onclick="setValue(8)">8</button>
+                    <button  data-key="105" data-secondary="57" onclick="setValue(9)">9</button>
+                    <button  data-key="100" data-secondary="52" onclick="setValue(4)">4</button>
+                    <button  data-key="101" data-secondary="53"onclick="setValue(5)">5</button>
+                    <button  data-key="102" data-secondary="54" onclick="setValue(6)">6</button>
+                    <button  data-key="97" data-secondary="49" onclick="setValue(1)">1</button>
+                    <button  data-key="98" data-secondary="50" onclick="setValue(2)">2</button>
+                    <button  data-key="99" data-secondary="51" onclick="setValue(3)">3</button>
+                    <button  data-key="96" data-secondary="48" onclick="setValue(0)">0</button>
+                    <button  data-key="110" id="dot" data-secondary="190" onclick="setValue('.')">.</button>
                 </div>
                 <div class="side-buttons">
-                    <button class="key" data-key="107" onclick="setOperator('+')">+</button>
-                    <button class="key" data-key="13" onclick="equals()">=</button>
+                    <button  data-key="107" onclick="setOperator('+')">+</button>
+                    <button  data-key="13" data-secondary="61" onclick="equals()">=</button>
                 </div>
             </div>
         </section>
