@@ -11,9 +11,9 @@ body{
     flex-wrap: wrap;
     justify-content: flex-start;
     background-color: purple;
+    padding-bottom: 0.5rem;
 }
-.display{
-    
+.display{ 
     margin: 10px 0px ;
     border: solid black 3px;
     background-color: lavender;
@@ -50,6 +50,7 @@ body{
     width: 325px;
 }
 .decimal-buttons>button{
+    max-width: 105px;
     padding: 20px 47px;
     margin: 1px;
 }
@@ -61,7 +62,7 @@ body{
 } */
 #dot{
     flex-grow: 1;
-    max-width: 211px;
+    max-width: 212px;
 }
 #equal{
     background-color: gold;
@@ -80,6 +81,7 @@ body{
     display: flex;
     flex-direction: column;
     margin-left: 7px;
+    margin-top: 1px;
     gap: 2px;
 }
 .side-buttons>button{
